@@ -8,7 +8,7 @@ CLI keyboard layout switcher for X11
 I wrote this one (using the code of [xxkb] (http://sourceforge.net/projects/xxkb/)) to allow switching keyboard layouts with individual hotkeys. For example:
 
 ```bash
-# assume we have to layouts configured
+# assume we have two layouts configured
 $ setxkbmap -layout "en, ru"
 # switch to Russian first
 $ xkbswitch 1
