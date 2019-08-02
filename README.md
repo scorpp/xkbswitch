@@ -24,6 +24,12 @@ You could bind these to hotkeys within you window manager and every time you pre
     <command>xkbswitch 0</command>
   </action>
 </keybind>
+<!-- Ctrl+Shift+2 switches to Russian -->
+<keybind key="C-S-2">
+  <action name="Execute">
+    <command>xkbswitch 0</command>
+  </action>
+</keybind>
 ```
 
 Or you could ensure same layout every time you run a certain program. Example for OpenBox again:
