@@ -27,7 +27,7 @@ You could bind these to hotkeys within you window manager and every time you pre
 <!-- Ctrl+Shift+2 switches to Russian -->
 <keybind key="C-S-2">
   <action name="Execute">
-    <command>xkbswitch 0</command>
+    <command>xkbswitch 1</command>
   </action>
 </keybind>
 ```
