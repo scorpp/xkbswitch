@@ -16,7 +16,12 @@ $ xkbswitch 1
 $ xkbswitch 0
 ```
     
-You could bind these to hotkeys within you window manager and every time you press the hotkey you know which layout is the current one. This also allows to use non-standard hotkeys to switch layouts. Here is example for OpenBox:
+You could bind these to hotkeys within you window manager and every time you press the hotkey you know which layout is the current one. This also allows to use non-standard hotkeys to switch layouts.
+
+### Examples
+
+#### OpenBox:
+
 ```xml
 <!-- Ctrl+Shift+1 switches to English -->
 <keybind key="C-S-1">
@@ -30,6 +35,18 @@ You could bind these to hotkeys within you window manager and every time you pre
     <command>xkbswitch 1</command>
   </action>
 </keybind>
+```
+
+#### Awesome
+
+```
+-- {{{ Key bindings
+globalkeys = awful.util.table.join(
+....
+    awful.key({ "Control", "Shift" }, "1", function() os.execute("xkbswitch 0") end),
+    awful.key({ "Control", "Shift" }, "2", function() os.execute("xkbswitch 1") end),
+....
+)
 ```
 
 Or you could ensure same layout every time you run a certain program. Example for OpenBox again:
