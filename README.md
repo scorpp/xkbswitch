@@ -5,7 +5,7 @@ CLI keyboard layout switcher for X11
 
 ### Usage
 
-I wrote this one (using the code of [xxkb] (http://sourceforge.net/projects/xxkb/)) to allow switching keyboard layouts with individual hotkeys. For example:
+I wrote this one (using the code of [xxkb](http://sourceforge.net/projects/xxkb/)) to allow switching keyboard layouts with individual hotkeys. For example:
 
 ```bash
 # assume we have two layouts configured
