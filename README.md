@@ -11,8 +11,8 @@ I wrote this one (using the code of [xxkb](http://sourceforge.net/projects/xxkb/
 
 ```bash
 # assume we have two layouts configured
-$ setxkbmap -layout "en, ru"
-# switch to Russian first
+$ setxkbmap -layout "en, ua"
+# switch to Ukrainian first
 $ xkbswitch 1
 # switch to English back
 $ xkbswitch 0
@@ -31,7 +31,7 @@ You could bind these to hotkeys within you window manager and every time you pre
     <command>xkbswitch 0</command>
   </action>
 </keybind>
-<!-- Ctrl+Shift+2 switches to Russian -->
+<!-- Ctrl+Shift+2 switches to Ukrainian -->
 <keybind key="C-S-2">
   <action name="Execute">
     <command>xkbswitch 1</command>
@@ -53,7 +53,7 @@ globalkeys = awful.util.table.join(
 
 Or you could ensure same layout every time you run a certain program. Example for OpenBox again:
 ```xml
-<!-- I want to have input lang set to English when unlocking my screen -->
+<!-- I want to have input lang set to English when locking my screen -->
 <keybind key="W-L">
   <action name="Execute">
     <command>sh -c 'xkbswitch 0; slimlock'</command>
